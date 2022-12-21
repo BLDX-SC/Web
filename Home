@@ -1,0 +1,605 @@
+
+<!DOCTYPE html>
+<html data-wf-domain="blockdx.pro" data-wf-page="6267b52ba9dc250f85821a03" data-wf-site="6267b52ba9dc25e3a0821a02" data-wf-status="1">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
+<title>BlockDx | Multi chain Block hash Exchange</title>
+<meta content="BlockDx | Multi chain Block hash Exchange" name="BlockDx"/>
+<meta content="BlockDx | Multi chain Block hash Exchange" property="og:title"/>
+<meta content="BlockDx | Multi chain Block hash Exchange" property="og:description"/>
+<meta content="img/about.png" property="og:image"/>
+<meta content="BlockDx | Multi chain Block hash Exchange" property="twitter:title"/>
+<meta content="BlockDx | Multi chain Block hash Exchange" property="twitter:description"/>
+<meta content="img/about.png" property="twitter:image"/>
+<meta property="og:type" content="BlockDx"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="width=device-width, initial-scale=1" name="BlockDx"/>
+<meta name="theme-color" content="#0965e6">
+<link rel="stylesheet" href="./css/bldx_web3.0.css?v=1.0">
+<!-- <link rel="stylesheet" href="./css/swiper-bundle.min.css"> -->
+<link href="img/favicon.svg" rel="shortcut icon" type="image/x-icon"/>
+<link href="img/favicon.svg" rel="apple-touch-icon"/>
+<style>
+	#lang_box{
+		width: 46px;
+	}
+	#lang_dailog{
+		position: absolute;width: 46px;height: 100px;left: 0;top:45px;z-index: 1000;display: none;
+	}
+	.lang_button{
+		margin-bottom: 1px;width: 46px;
+	}
+
+    /* @media screen and (max-width:600px){
+		.swiper-wrapper {  
+			width:358px;
+		}
+    }
+	@media screen and (min-width:600px) and (max-width:960px){
+		.swiper-wrapper {  
+			width: 450px;
+		}
+    }
+	@media screen and (min-width:960px){
+		.swiper-wrapper {  
+			width: 600px;
+		}
+    } */
+
+	@media screen and (max-width:400px){
+	   	.animation-container {
+			height: 300px;
+		}
+		@keyframes flyingAnim {
+			0% {
+				top: 57%;
+			}
+			25% {
+				top: 62%;
+			}
+			50% {
+				top:57%;
+			}
+			75% {
+				top: 62%;
+			}
+			100% {
+				top:57%;
+			}
+		}
+   }
+
+   @media screen and (min-width:400px) and (max-width:600px){
+	   	.animation-container {
+			height: 300px;
+		}
+		@keyframes flyingAnim {
+			0% {
+				top: 50%;
+			}
+			25% {
+				top: 55%;
+			}
+			50% {
+				top:50%;
+			}
+			75% {
+				top: 55%;
+			}
+			100% {
+				top:50%;
+			}
+		}
+   }
+
+   @media screen and (min-width:600px) {
+	   	.animation-container {
+			height: 700px;
+		}
+		@keyframes flyingAnim {
+			0% {
+				top: 37%;
+			}
+			25% {
+				top: 42%;
+			}
+			50% {
+				top:37%;
+			}
+			75% {
+				top: 42%;
+			}
+			100% {
+				top:37%;
+			}
+		}
+   }
+
+.animation {
+	position: absolute;
+	transform: translate(-50%);
+	animation: 5s ease-in-out 0s infinite normal none running flyingAnim;
+}
+</style>
+</head>
+<body>
+<div data-w-id="d893fe6d-dada-2d13-21f8-21935f6d4fc4" data-animation="default" data-collapse="none" data-duration="400" data-easing="ease" data-easing2="ease" role="banner" class="navigation w-nav">
+	<div class="container nav">
+		<a href="index.html" aria-current="page" class="nav-logo-link w-nav-brand w--current"><img src="./img/logo.svg" loading="lazy" alt="" class="logo"/></a>
+		<div>
+			<div style="position: relative;display: inline-block;">
+				<a class="button nav w-button" id="lang_box" onclick="langFn()">EN</a>&nbsp;
+				<div id="lang_dailog">
+					<a class="button nav w-button lang_button translate" id="en" onclick="langSelectedFn('EN')">EN</a>
+					<a class="button nav w-button lang_button translate" id="ko" onclick="langSelectedFn('KO')">KO</a>
+					<a class="button nav w-button lang_button translate" id="jp" onclick="langSelectedFn('JP')">JP</a>
+					<a class="button nav w-button lang_button translate" id="vi" onclick="langSelectedFn('VI')">VI</a>
+					<a class="button nav w-button lang_button translate" id="cn" onclick="langSelectedFn('CN')">CN</a>
+					<a class="button nav w-button lang_button translate" id="es" onclick="langSelectedFn('ES')">ES</a>
+				</div>
+			</div>
+			<a href="trade.html" class="button outlined nav w-button lang" key="INDEX-1-2"></a>
+		</div>
+		<div class="nav-menu-button w-nav-button">
+			<div class="nav-menu-burger-icon w-embed">
+				<svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<rect x="4" y="6" width="16" height="2" rx="1" fill="currentColor"/>
+				<rect x="4" y="11" width="16" height="2" rx="1" fill="currentColor"/>
+				<rect x="4" y="16" width="16" height="2" rx="1" fill="currentColor"/>
+				</svg>
+			</div>
+		</div>
+	</div>
+</div>
+<img src="./img/shape_2.png" loading="lazy" alt="" class="shape-2"/><img src="./img/shape_3.png" loading="lazy" alt="" class="shape-3"/>
+<div data-w-id="8ac59c02-be13-4e50-445c-dbb266e4eafd" style="opacity:0" class="section">
+	<div class="container">
+		<div class="container medium">
+			<div class="text-center">
+				<h1 class="lang" key="INDEX-1"></h1>
+				<div class="spacer _24px">
+				</div>
+				<p class="big-paragraph lang" key="INDEX-2">
+				</p>
+				<div class="spacer _32px">
+				</div>
+				<div class="form-block w-form">
+					<form id="email-form" name="email-form" data-name="Email Form" method="get" class="form-flex">
+						<div class="hero-input-wrapper">
+							<input type="email" class="text-field subscribe-form w-input" id="INDEX-p1" maxlength="256" name="Subscriber-Email" data-name="Subscriber Email" placeholder="Your email" id="Subscriber-Email" required=""/>
+						</div>
+						<input type="submit" id="INDEX-v1" value="Subscribe" data-wait="Please wait..." class="lang button w-button"/>
+					</form>
+					<div class="success-message w-form-done">
+						<div class="lang" key="INDEX-34">
+						</div>
+					</div>
+					<div class="error-message w-form-fail">
+						<div class="lang" key="INDEX-35">
+						</div>
+					</div>
+				</div>
+				<div class="spacer _64px">
+				</div>
+						<!-- <img src="./img/main_1.png" width="720" loading="lazy" class="hero-cover-image"/> -->
+				<div class="animation-container">			
+					<img src="./img/main_1.png" width="720" loading="lazy" class="hero-cover-image animation" />
+				</div>
+	
+			</div>
+		</div>
+	</div>
+</div>
+<div data-w-id="f8b9e023-75a3-8f5e-5f2f-b23b642e0fae" style="opacity:0" class="section">
+	<div class="container">
+		<div class="grid">
+			<div id="w-node-_51d0307e-5c69-d9e2-c8e5-8472c05f229b-85821a03">
+				<h2 class="lang" key="INDEX-3"></h2>
+				<div class="spacer _16px">
+				</div>
+				<p class="big-paragraph lang" key="INDEX-4">
+				</p>
+				<div class="spacer _24px">
+				</div>
+				<a href="trade.html" class="button w-button lang" key="INDEX-5"></a>
+			</div>
+			<div id="w-node-_8be764e4-8776-ff4c-cb06-b348b53450d3-85821a03" class="feature-card">
+				<img src="./img/advantage_2.png" width="50" loading="lazy" alt="BlockDx icon" class="feature-icon"/>
+				<div class="spacer _12px">
+				</div>
+				<h3 class="lang" key="INDEX-6"></h3>
+				<div class="spacer _12px">
+				</div>
+				<p class="lang" key="INDEX-7">
+				</p>
+			</div>
+			<div id="w-node-_5765d120-befd-ddb8-f46b-4e81c6abf409-85821a03" class="feature-card">
+				<img src="./img/advantage_1.png" width="35" loading="lazy" alt="BlockDx icon" class="feature-icon"/>
+				<div class="spacer _12px">
+				</div>
+				<h3 class="lang" key="INDEX-8"></h3>
+				<div class="spacer _12px">
+				</div>
+				<p class="lang" key="INDEX-9">
+				</p>
+			</div>
+			<div id="w-node-_42796c8a-3b89-07a6-165f-bb719fc91f59-85821a03" class="feature-card">
+				<img src="./img/advantage_3.png" width="50" loading="lazy" alt="BlockDx icon" class="feature-icon"/>
+				<div class="spacer _12px">
+				</div>
+				<h3 class="lang" key="INDEX-10"></h3>
+				<div class="spacer _12px">
+				</div>
+				<p class="lang" key="INDEX-11">
+				</p>
+			</div>
+			<div id="w-node-_04a666ee-8292-5b61-7d31-6fd822e705ab-85821a03" class="feature-card">
+				<img src="./img/advantage_5.png" width="61" loading="lazy" alt="BlockDx icon" class="feature-icon"/>
+				<div class="spacer _12px">
+				</div>
+				<h3 class="lang" key="INDEX-12"></h3>
+				<div class="spacer _12px">
+				</div>
+				<p class="lang" key="INDEX-13">
+				</p>
+			</div>
+		</div>
+	</div>
+</div>
+<div data-w-id="4caa7cb6-6a25-88b8-89ad-ca4d7ef5cbf8" style="opacity:0" class="section">
+	<div class="container">
+		<div class="grid">
+			<div id="w-node-d82708cc-0cba-7b23-408e-02f5878fa420-85821a03">
+				<img src="./img/main_2.png" loading="lazy" class="cover-image"/>
+			</div>
+			<div id="w-node-_9676d33e-430b-045e-2474-361f67679c7a-85821a03" class="tablet-hide">
+			</div>
+			<div id="w-node-_4caa7cb6-6a25-88b8-89ad-ca4d7ef5cbfb-85821a03" class="tablet-text-center">
+				<h2 class="lang" key="INDEX-14"></h2>
+				<div class="spacer _16px">
+				</div>
+				<p class="big-paragraph lang" key="INDEX-15">
+				</p>
+			</div>
+		</div>
+	</div>
+</div>
+<div data-w-id="89225192-05ef-33a3-5e4d-6a4bfa1e2fbd" style="opacity:0" class="section">
+	<div class="container">
+		<div class="container small">
+			<div class="text-center">
+				<h2 class="lang" key="INDEX-16"></h2>
+				<div class="spacer _16px">
+				</div>
+				<p class="big-paragraph lang" key="INDEX-17">
+				</p>
+				<div class="spacer _80px">
+				</div>
+			</div>
+		</div>
+		<div class="grid">
+			<div id="w-node-_43576c71-1122-2e90-795e-44bd0eb3c024-85821a03" class="team-card">
+				<div class="team-player-image-wrapper">
+					<img src="./img/platform_1.jpeg" loading="lazy" alt="Cody Fisher" class="cover-image"/>
+				</div>
+				<div class="team-card-gradient">
+				</div>
+				<br>
+				<h3 class="lang" key="INDEX-18"></h3>
+				<div class="spacer _12px">
+				</div>
+				<p class="lang" key="INDEX-19">
+				</p>
+				<br>
+			</div>
+			<div id="w-node-_5a1933ae-25b1-b206-3dc1-15e4916ebddc-85821a03" class="team-card">
+				<div class="team-player-image-wrapper">
+					<img src="./img/platform_2.jpeg" loading="lazy" alt="Jacob Jones" class="cover-image"/>
+				</div>
+				<div class="team-card-gradient">
+				</div>
+				<br>
+				<h3 class="lang" key="INDEX-20"></h3>
+				<div class="spacer _12px">
+				</div>
+				<p class="lang" key="INDEX-21">
+				</p>
+				<br>
+			</div>
+			<div id="w-node-_51905843-e913-0185-62ba-51506831d199-85821a03" class="team-card">
+				<div class="team-player-image-wrapper">
+					<img src="./img/platform_3.jpeg" loading="lazy" alt="Annette Black" class="cover-image"/>
+				</div>
+				<div class="team-card-gradient">
+				</div>
+				<br>
+				<h3 class="lang" key="INDEX-22"></h3>
+				<div class="spacer _12px">
+				</div>
+				<p class="lang" key="INDEX-23">
+				</p>
+				<br>
+			</div>
+			<div id="w-node-a33c7462-3ffa-904c-287b-902ac06fb8f4-85821a03" class="team-card">
+				<div class="team-player-image-wrapper">
+					<img src="./img/platform_4.jpeg" loading="lazy" alt="Jane Cooper" class="cover-image"/>
+				</div>
+				<div class="team-card-gradient">
+				</div>
+				<br>
+				<h3 class="lang" key="INDEX-24"></h3>
+				<div class="spacer _12px">
+				</div>
+				<p class="lang" key="INDEX-25">
+				</p>
+				<br>
+			</div>
+		</div>
+	</div>
+</div>
+<div data-w-id="6d722438-3aac-5eec-c00f-8fe81cba181b" style="opacity:0" class="section">
+	<div class="container">
+		<div class="container small">
+			<div class="text-center">
+				<h2 class="lang" key="INDEX-26"></h2>
+				<div class="spacer _16px">
+				</div>
+				<p class="big-paragraph lang" key="INDEX-27">
+				</p>
+				<div class="spacer _80px">
+				</div>
+			</div>
+		</div>
+		<div class="grid">
+			<div id="w-node-f4eb1a2a-0c85-5f05-6c38-0504240d9187-85821a03" class="text-center">
+				<h2 class="text-color-primary">0</h2>
+				<div class="spacer _8px">
+				</div>
+				<h3 class="heading-regular lang" key="INDEX-28"></h3>
+			</div>
+			<div id="w-node-_26a14b22-f001-457d-5898-20a03aee2fb6-85821a03" class="text-center">
+				<h2 class="text-color-primary">0.00</h2>
+				<div class="spacer _8px">
+				</div>
+				<h3 class="heading-regular lang" key="INDEX-29"></h3>
+			</div>
+			<div id="w-node-_55d749f3-4f5c-57f2-7813-22de99574f9c-85821a03" class="text-center">
+				<h2 class="text-color-primary">0.00</h2>
+				<div class="spacer _8px">
+				</div>
+				<h3 class="heading-regular lang" key="INDEX-30"></h3>
+			</div>
+			<div id="w-node-_7fc86a30-57f3-36ff-d297-d0fc19a40d0d-85821a03" class="text-center">
+				<h2 class="text-color-primary">0.00</h2>
+				<div class="spacer _8px">
+				</div>
+				<h3 class="heading-regular lang" key="INDEX-31"></h3>
+			</div>
+		</div>
+	</div>
+</div>
+<div data-w-id="b591574c-6f79-8bec-f5c4-3d9124f8c7dc" style="opacity:0" class="section">
+	<div class="container">
+		<div class="cta-section">
+			<div class="container medium">
+				<div class="text-center">
+					<h2 class="lang" key="INDEX-32"></h2>
+					<div class="spacer _24px">
+					</div>
+					<p class="big-paragraph lang" key="INDEX-33">
+					</p>
+					<div class="spacer _32px">
+					</div>
+					<div class="form-block w-form">
+						<form id="email-form" name="email-form" data-name="Email Form" method="get" class="form-flex">
+							<div class="hero-input-wrapper">
+								<input type="email" class="text-field subscribe-form w-input" id="INDEX-p1" maxlength="256" name="Subscriber-Email-2" data-name="Subscriber Email 2" placeholder="Your email" id="Subscriber-Email-2" required=""/>
+							</div>
+							<input type="submit" id="INDEX-v1" value="Subscribe" data-wait="Please wait..." class="button w-button"/>
+						</form>
+						<div class="success-message w-form-done">
+							<div class="lang" key="INDEX-34">
+							</div>
+						</div>
+						<div class="error-message w-form-fail">
+							<div class="lang" key="INDEX-35">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div data-w-id="e159aebf-4c19-2150-1e91-52b3f3ff1573" style="opacity:0" class="section">
+	<div class="container">
+		<div class="container width-90">
+			<div class="text-center">
+				<h2 class="lang" key="INDEX-36"></h2>
+				<div class="spacer _80px">
+				</div>
+			</div>
+			<div class="faq-flex">
+				<div id="w-node-ef9e4765-59d7-b497-2803-6c289f9f28e0-85821a03" class="faq-column">
+					<div id="w-node-a07dd585-4e3d-c59f-5111-9342efd6a94c-85821a03" data-w-id="a07dd585-4e3d-c59f-5111-9342efd6a94c" class="faq-card">
+						<div class="faq-card-header">
+							<h3 class="faq-card-heading heading-regular lang" key="INDEX-37"></h3>
+							<div class="arrow-icon w-embed">
+								<svg width="24" height="24" viewbox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+								<path d="M16.9 9.1999C16.5 8.7999 15.9 8.7999 15.5 9.1999L12 12.6999L8.5 9.1999C8.1 8.7999 7.5 8.7999 7.1 9.1999C6.7 9.5999 6.7 10.1999 7.1 10.5999L11.3 14.7999C11.5 14.9999 11.7 15.0999 12 15.0999C12.3 15.0999 12.5 14.9999 12.7 14.7999L16.9 10.5999C17.3 10.1999 17.3 9.5999 16.9 9.1999Z" fill="currentColor"/>
+								</svg>
+							</div>
+						</div>
+						<p style="display:none;opacity:0;height:0px" class="faq-card-paragraph lang" key="INDEX-38">
+						</p>
+					</div>
+					<div id="w-node-_13a584a6-5268-0285-2adf-1a33a1ac454e-85821a03" data-w-id="13a584a6-5268-0285-2adf-1a33a1ac454e" class="faq-card">
+						<div class="faq-card-header">
+							<h3 class="faq-card-heading heading-regular lang" key="INDEX-39"></h3>
+							<div class="arrow-icon w-embed">
+								<svg width="24" height="24" viewbox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+								<path d="M16.9 9.1999C16.5 8.7999 15.9 8.7999 15.5 9.1999L12 12.6999L8.5 9.1999C8.1 8.7999 7.5 8.7999 7.1 9.1999C6.7 9.5999 6.7 10.1999 7.1 10.5999L11.3 14.7999C11.5 14.9999 11.7 15.0999 12 15.0999C12.3 15.0999 12.5 14.9999 12.7 14.7999L16.9 10.5999C17.3 10.1999 17.3 9.5999 16.9 9.1999Z" fill="currentColor"/>
+								</svg>
+							</div>
+						</div>
+						<p style="display:none;opacity:0;height:0px" class="faq-card-paragraph lang" key="INDEX-40">
+						</p>
+					</div>
+					<div id="w-node-_45691b08-9b00-965d-3780-1a2b9275f142-85821a03" data-w-id="45691b08-9b00-965d-3780-1a2b9275f142" class="faq-card">
+						<div class="faq-card-header">
+							<h3 class="faq-card-heading heading-regular lang" key="INDEX-41"></h3>
+							<div class="arrow-icon w-embed">
+								<svg width="24" height="24" viewbox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+								<path d="M16.9 9.1999C16.5 8.7999 15.9 8.7999 15.5 9.1999L12 12.6999L8.5 9.1999C8.1 8.7999 7.5 8.7999 7.1 9.1999C6.7 9.5999 6.7 10.1999 7.1 10.5999L11.3 14.7999C11.5 14.9999 11.7 15.0999 12 15.0999C12.3 15.0999 12.5 14.9999 12.7 14.7999L16.9 10.5999C17.3 10.1999 17.3 9.5999 16.9 9.1999Z" fill="currentColor"/>
+								</svg>
+							</div>
+						</div>
+						<p style="display:none;opacity:0;height:0px" class="faq-card-paragraph lang" key="INDEX-42">
+						</p>
+					</div>
+				</div>
+				<div id="w-node-_8de29fd1-2ddf-e990-344b-ce6ead19bf12-85821a03" class="faq-column">
+					<div id="w-node-_166bff62-3ed0-0ed3-3a13-04d8673dfd22-85821a03" data-w-id="166bff62-3ed0-0ed3-3a13-04d8673dfd22" class="faq-card">
+						<div class="faq-card-header">
+							<h3 class="faq-card-heading heading-regular lang" key="INDEX-43"></h3>
+							<div class="arrow-icon w-embed">
+								<svg width="24" height="24" viewbox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+								<path d="M16.9 9.1999C16.5 8.7999 15.9 8.7999 15.5 9.1999L12 12.6999L8.5 9.1999C8.1 8.7999 7.5 8.7999 7.1 9.1999C6.7 9.5999 6.7 10.1999 7.1 10.5999L11.3 14.7999C11.5 14.9999 11.7 15.0999 12 15.0999C12.3 15.0999 12.5 14.9999 12.7 14.7999L16.9 10.5999C17.3 10.1999 17.3 9.5999 16.9 9.1999Z" fill="currentColor"/>
+								</svg>
+							</div>
+						</div>
+						<p style="display:none;opacity:0;height:0px" class="faq-card-paragraph lang" key="INDEX-44">
+						</p>
+					</div>
+					<div id="w-node-b5b2a6d6-f4ec-6d81-5c56-3d8fc5647a8c-85821a03" data-w-id="b5b2a6d6-f4ec-6d81-5c56-3d8fc5647a8c" class="faq-card">
+						<div class="faq-card-header">
+							<h3 class="faq-card-heading heading-regular lang" key="INDEX-45"></h3>
+							<div class="arrow-icon w-embed">
+								<svg width="24" height="24" viewbox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+								<path d="M16.9 9.1999C16.5 8.7999 15.9 8.7999 15.5 9.1999L12 12.6999L8.5 9.1999C8.1 8.7999 7.5 8.7999 7.1 9.1999C6.7 9.5999 6.7 10.1999 7.1 10.5999L11.3 14.7999C11.5 14.9999 11.7 15.0999 12 15.0999C12.3 15.0999 12.5 14.9999 12.7 14.7999L16.9 10.5999C17.3 10.1999 17.3 9.5999 16.9 9.1999Z" fill="currentColor"/>
+								</svg>
+							</div>
+						</div>
+						<p style="display:none;opacity:0;height:0px" class="faq-card-paragraph lang" key="INDEX-46">
+						</p>
+					</div>
+					<div id="w-node-a655f65a-5c1d-2603-6bdc-f7439113668c-85821a03" data-w-id="a655f65a-5c1d-2603-6bdc-f7439113668c" class="faq-card">
+						<div class="faq-card-header">
+							<h3 class="faq-card-heading heading-regular lang" key="INDEX-47"></h3>
+							<div class="arrow-icon w-embed">
+								<svg width="24" height="24" viewbox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+								<path d="M16.9 9.1999C16.5 8.7999 15.9 8.7999 15.5 9.1999L12 12.6999L8.5 9.1999C8.1 8.7999 7.5 8.7999 7.1 9.1999C6.7 9.5999 6.7 10.1999 7.1 10.5999L11.3 14.7999C11.5 14.9999 11.7 15.0999 12 15.0999C12.3 15.0999 12.5 14.9999 12.7 14.7999L16.9 10.5999C17.3 10.1999 17.3 9.5999 16.9 9.1999Z" fill="currentColor"/>
+								</svg>
+							</div>
+						</div>
+						<p style="display:none;opacity:0;height:0px" class="faq-card-paragraph lang" key="INDEX-48">
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div data-w-id="fbea8872-e68b-25be-203d-72a056851f53" style="opacity:0" class="section">
+	<div class="container">
+		<div class="cta-section-2">
+			<h2 class="text-color-white lang" key="INDEX-49"></h2>
+			<a href="" class="button white-button w-button lang" key="INDEX-50"></a>
+		</div>
+	</div>
+</div>
+<div data-w-id="93e7fedb-7fac-81d4-ea7c-e29719696f43" class="footer">
+	<div class="container">
+		<div class="footer-links-flex">
+			<a href="index.html" aria-current="page" class="footer-logo-link w-nav-brand w--current"><img src="./img/logo.svg" loading="lazy" alt="" class="logo"/></a>
+			<div class="footer-links-block">
+				<a href="https://docs.blockdx.pro/bldx/" target="_blank" class="footer-link lang" key="INDEX-51"></a>
+				<a href="" target="_blank" class="footer-link lang" key="INDEX-52"></a>
+				<a href="https://medium.com/@help_93208" target="_blank" class="footer-link lang" key="INDEX-53"></a>
+				<a href="legal.html" class="footer-link lang" key="INDEX-54"></a>
+			</div>
+		</div>
+		<div class="spacer _40px">
+		</div>
+		<div class="divider">
+		</div>
+		<div class="spacer _40px">
+		</div>
+		<div class="footer-links-flex">
+			<p>
+				 © 2022. BlockDx Exchange.
+			</p>
+			<div id="w-node-_93e7fedb-7fac-81d4-ea7c-e29719696f5a-19696f43" class="social-icons-flex">
+				<a href="https://youtube.com/@dxblock4807" target="_blank" class="w-inline-block">
+				<div class="social-icon w-embed">
+					<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 473.931 473.931" style="enable-background:new 0 0 473.931 473.931;" xml:space="preserve">
+					<circle style="fill:#D42428;" cx="236.966" cy="236.966" r="236.966"/>
+					<path style="fill:#CC202D;" d="M404.518,69.38c92.541,92.549,92.549,242.593,0,335.142c-92.541,92.541-242.593,92.545-335.142,0 L404.518,69.38z"/>
+					<path style="fill:#BA202E;" d="M469.168,284.426L351.886,167.148l-138.322,15.749l-83.669,129.532l156.342,156.338 C378.157,449.322,450.422,376.612,469.168,284.426z"/>
+					<path style="fill:#FFFFFF;" d="M360.971,191.238c0-19.865-16.093-35.966-35.947-35.966H156.372c-19.85,0-35.94,16.105-35.94,35.966 v96.444c0,19.865,16.093,35.966,35.94,35.966h168.649c19.858,0,35.947-16.105,35.947-35.966v-96.444H360.971z M216.64,280.146 v-90.584l68.695,45.294L216.64,280.146z"/></svg>
+				</div>
+				</a><a href="https://twitter.com/Blockdxpro?t=MbPfBfDF3D8a5NSrq5FV2Q&s=09" target="_blank" class="w-inline-block">
+				<div class="social-icon w-embed">
+					<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+					<circle style="fill:#78BAEB;" cx="256" cy="256" r="256"/>
+					<path style="fill:#59AAE7;" d="M256,0c-11.317,0-22.461,0.744-33.391,2.167C348.216,18.53,445.217,125.933,445.217,256 s-97.002,237.47-222.609,253.833C233.539,511.256,244.683,512,256,512c141.385,0,256-114.616,256-256S397.385,0,256,0z"/>
+					<path style="fill:#FCFCFC;" d="M206.186,401.252c-23.512,0-46.553-4.23-68.483-12.57l-21.732-8.265 c-2.377-0.904-2.048-4.365,0.457-4.805l22.901-4.021c21.217-3.726,41.281-12.365,58.477-25.121c1.814-1.346,1.083-4.177-1.152-4.506 c-20.024-2.937-38.002-15.046-48.089-32.814l-5.141-9.056c-0.922-1.623,0.194-3.647,2.057-3.736l10.401-0.498 c0.035-0.001,0.069-0.003,0.105-0.006c2.612-0.129,3.236-3.685,0.861-4.784c-19.054-8.82-32.857-26.533-36.403-47.743l-1.585-9.48 c-0.295-1.763,1.3-3.258,3.04-2.851l9.358,2.193c4.981,1.166,10.13,1.759,15.305,1.759c0.061,0,0.122,0,0.184,0 c-19.956-12.782-31.811-34.384-31.811-58.161c0-5.914,0.742-11.764,2.207-17.388l2.798-10.746c0.486-1.867,2.812-2.505,4.183-1.15 l7.897,7.808c20.856,20.622,46.465,36.497,74.064,45.911c7.307,2.317,29.468,8.604,37.141,8.635l0.189,0.002 c0.027,0,2.241,0.08,3.678,0.147c-0.009-0.404-0.016-0.808-0.016-1.213c0-41.788,33.997-75.785,75.785-75.785 c19.954,0,38.688,7.644,52.929,21.562c0.563,0.55,1.346,0.818,2.124,0.7c7.323-1.111,14.609-2.864,21.616-5.211l23.364-7.828 c2.448-0.82,4.384,2.153,2.646,4.06l-16.6,18.209c-2.212,2.426-4.588,4.684-7.113,6.761c-2.001,1.645-0.513,4.88,2.032,4.402 c2.263-0.424,4.512-0.904,6.738-1.438l21.432-5.142c2.438-0.584,4.126,2.377,2.381,4.177l-15.343,15.822 c-6.212,6.406-13.099,12.285-20.473,17.476l0.012,0.362c0.022,0.622,0.041,1.245,0.041,1.873v0.755 C398.215,315.27,311.876,401.252,206.186,401.252z"/></svg>
+				</div>
+				</a><a href="https://www.facebook.com/profile.php?id=100088689012207&mibextid=ZbWKwL" target="_blank" class="w-inline-block">
+				<div class="social-icon w-embed">
+					<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+					<circle style="fill:#1D81CE;" cx="256" cy="256" r="256"/>
+					<path style="fill:#126DB1;" d="M256,0c-11.317,0-22.461,0.744-33.391,2.167C348.216,18.53,445.217,125.933,445.217,256 s-97.002,237.47-222.609,253.833C233.539,511.256,244.683,512,256,512c141.385,0,256-114.616,256-256S397.385,0,256,0z"/>
+					<path style="fill:#FCFCFC;" d="M166.957,256.092v9.537c0,0.884-0.717,1.601-1.601,1.601h-69.68c-3.663,0-6.633,2.97-6.633,6.633 v64.697c0,3.663,2.97,6.633,6.633,6.633h69.68c0.884,0,1.601,0.717,1.601,1.601v148.405c0,0.674,0.421,1.28,1.053,1.512 c23.623,8.652,48.877,13.913,75.174,15.211c0.915,0.046,1.686-0.691,1.686-1.608V346.793c0-0.884,0.717-1.601,1.601-1.601h114.202 c3.663,0,6.633-2.97,6.633-6.633v-64.697c0-3.663-2.97-6.633-6.633-6.633H246.47c-0.884,0-1.601-0.717-1.601-1.601v-9.537 c0-43.058,34.883-66.825,77.913-66.825h37.889c3.663,0,6.633-2.97,6.633-6.633v-64.697c0-3.663-2.97-6.633-6.633-6.633h-37.889 C242.869,111.304,166.957,176.128,166.957,256.092z"/></svg>
+				</div>
+				</a><a href="https://www.instagram.com/invites/contact/?i=1b9mbt2i4jbdf&utm_content=q3zuz6t" target="_blank" class="w-inline-block">
+				<div class="social-icon w-embed">
+					<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+					<circle style="fill:#6C27B3;" cx="256" cy="256" r="256"/>
+					<path style="fill:#501A96;" d="M374.71,132.922c-30.587,3.872-62.479,3.737-94.575,0.681 c-44.822-3.448-110.33-24.135-134.465,17.239c-38.772,66.236-19.649,151.035-10.614,226.078l134.737,134.708 c130.388-6.923,234.886-111.407,241.831-241.79L374.71,132.922z"/>
+					<g>
+					<path style="fill:#FFFFFF;" d="M315.227,109.468H196.772c-48.14,0-87.304,39.164-87.304,87.304v118.455 c0,48.138,39.164,87.305,87.305,87.305h118.455c48.138,0,87.305-39.165,87.305-87.305V196.772 C402.532,148.632,363.367,109.468,315.227,109.468L315.227,109.468z M373.05,315.228c0,31.934-25.888,57.822-57.822,57.822H196.773 c-31.934,0-57.822-25.888-57.822-57.822V196.773c0-31.934,25.888-57.823,57.822-57.823h118.455 c31.934,0,57.822,25.89,57.822,57.823V315.228z"/>
+					<path style="fill:#FFFFFF;" d="M256,180.202c-41.794,0-75.798,34.004-75.798,75.798c0,41.791,34.004,75.795,75.798,75.795 s75.795-34.001,75.795-75.795S297.794,180.202,256,180.202L256,180.202z M256,302.313c-25.579,0-46.316-20.733-46.316-46.313 s20.737-46.316,46.316-46.316s46.313,20.735,46.313,46.316C302.313,281.579,281.579,302.313,256,302.313L256,302.313z"/>
+					</g>
+					<g>
+					<path style="fill:#D1D1D1;" d="M350.103,180.774c0,10.03-8.132,18.163-18.163,18.163c-10.03,0-18.163-8.133-18.163-18.163 c0-10.031,8.133-18.163,18.163-18.163C341.973,162.611,350.103,170.741,350.103,180.774L350.103,180.774z"/>
+					<path style="fill:#D1D1D1;" d="M315.228,109.468h-59.802v29.482h59.802c31.934,0,57.822,25.89,57.822,57.823v118.455 c0,31.934-25.888,57.822-57.822,57.822h-59.802v29.482h59.802c48.138,0,87.304-39.165,87.304-87.305V196.772 C402.532,148.632,363.367,109.468,315.228,109.468z"/>
+					<path style="fill:#D1D1D1;" d="M256,180.202c-0.193,0-0.381,0.014-0.574,0.014v29.482c0.191-0.002,0.381-0.014,0.574-0.014 c25.579,0,46.313,20.735,46.313,46.316c0,25.579-20.733,46.313-46.313,46.313c-0.193,0-0.383-0.012-0.574-0.014v29.482 c0.193,0.002,0.381,0.014,0.574,0.014c41.794,0,75.795-34.002,75.795-75.795C331.795,214.206,297.794,180.202,256,180.202z"/></svg>
+				</div>
+				</a><a href="https://t.me/blockdx" target="_blank" class="w-inline-block">
+				<div class="social-icon w-embed">
+					<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+					<circle style="fill:#59AAE7;" cx="256" cy="256" r="256"/>
+					<path style="fill:#3D9AE3;" d="M256,0c-11.317,0-22.461,0.744-33.391,2.167C348.216,18.53,445.217,125.933,445.217,256 s-97.002,237.47-222.609,253.833C233.539,511.256,244.683,512,256,512c141.385,0,256-114.616,256-256S397.385,0,256,0z"/>
+					<path style="fill:#FCFCFC;" d="M164.689,311.141L82.127,269.86c-2.263-1.132-2.285-4.353-0.038-5.516L395.75,102.105 c2.304-1.192,4.964,0.811,4.456,3.355l-54.004,270.017c-0.385,1.927-2.446,3.011-4.253,2.237l-73.393-31.453 c-0.879-0.377-1.884-0.326-2.721,0.139l-94.839,52.688c-2.062,1.145-4.597-0.345-4.597-2.705v-82.474 C166.4,312.736,165.738,311.665,164.689,311.141z"/>
+					<path style="fill:#D8D7DA;" d="M200.31,338.967l-0.513-82.428c-0.003-0.528,0.27-1.018,0.72-1.293l133.899-81.798 c1.518-0.927,3.106,1.083,1.852,2.345l-101.9,102.624c-0.112,0.114-0.207,0.244-0.278,0.387l-17.43,34.858l-13.509,25.988 C202.426,341.045,200.32,340.538,200.31,338.967z"/></svg>
+				</div>
+				</a>
+				<a href="https://github.com/" target="_blank" class="w-inline-block">
+				<div class="social-icon w-embed">
+					<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 496 496" style="enable-background:new 0 0 496 496;" xml:space="preserve">
+					<path id="SVGCleanerId_0" style="fill:#3E77BF;" d="M247.992,5.163C111.048,5.163,0,116.627,0,254.163 c0,109.992,71.048,203.32,169.632,236.24c12.392,2.296,16.912-5.392,16.912-12c0-5.904-0.216-21.56-0.336-42.344 c-69,15.064-83.552-33.376-83.552-33.376c-11.264-28.768-27.52-36.408-27.52-36.408c-22.528-15.456,1.696-15.16,1.696-15.16 c24.88,1.752,37.976,25.672,37.976,25.672c22.144,38.048,58.064,27.048,72.192,20.672c2.232-16.08,8.656-27.064,15.736-33.28 c-55.056-6.296-112.944-27.64-112.944-123.04c0-27.176,9.656-49.408,25.52-66.832c-2.568-6.296-11.072-31.6,2.416-65.872 c0,0,20.832-6.688,68.2,25.52c19.784-5.52,41-8.28,62.096-8.392c21.048,0.112,42.28,2.864,62.096,8.392 c47.328-32.208,68.128-25.52,68.128-25.52c13.52,34.272,5.016,59.576,2.456,65.872c15.904,17.424,25.504,39.648,25.504,66.832 c0,95.64-57.984,116.68-113.232,122.856c8.904,7.688,16.832,22.872,16.832,46.112c0,33.296-0.296,60.128-0.296,68.296 c0,6.672,4.472,14.424,17.048,11.968C425.016,457.387,496,364.123,496,254.163C496,116.627,384.952,5.163,247.992,5.163z"/>
+					<g>
+					<path id="SVGCleanerId_0_1_" style="fill:#3E77BF;" d="M247.992,5.163C111.048,5.163,0,116.627,0,254.163 c0,109.992,71.048,203.32,169.632,236.24c12.392,2.296,16.912-5.392,16.912-12c0-5.904-0.216-21.56-0.336-42.344 c-69,15.064-83.552-33.376-83.552-33.376c-11.264-28.768-27.52-36.408-27.52-36.408c-22.528-15.456,1.696-15.16,1.696-15.16 c24.88,1.752,37.976,25.672,37.976,25.672c22.144,38.048,58.064,27.048,72.192,20.672c2.232-16.08,8.656-27.064,15.736-33.28 c-55.056-6.296-112.944-27.64-112.944-123.04c0-27.176,9.656-49.408,25.52-66.832c-2.568-6.296-11.072-31.6,2.416-65.872 c0,0,20.832-6.688,68.2,25.52c19.784-5.52,41-8.28,62.096-8.392c21.048,0.112,42.28,2.864,62.096,8.392 c47.328-32.208,68.128-25.52,68.128-25.52c13.52,34.272,5.016,59.576,2.456,65.872c15.904,17.424,25.504,39.648,25.504,66.832 c0,95.64-57.984,116.68-113.232,122.856c8.904,7.688,16.832,22.872,16.832,46.112c0,33.296-0.296,60.128-0.296,68.296 c0,6.672,4.472,14.424,17.048,11.968C425.016,457.387,496,364.123,496,254.163C496,116.627,384.952,5.163,247.992,5.163z"/>
+					</g>
+					<g>
+					<path style="fill:#114C82;" d="M378.496,109.131c13.128,33.904,4.752,58.928,2.2,65.176c15.904,17.424,25.504,39.648,25.504,66.832 c0,95.64-57.984,116.68-113.232,122.856c8.904,7.688,16.832,22.872,16.832,46.112c0,33.296-0.296,60.128-0.296,68.296 c0,6.672,4.472,14.424,17.048,11.968C425.016,457.387,496,364.123,496,254.163c0-29.56-5.152-57.896-14.568-84.2 C447.24,133.963,409.184,109.987,378.496,109.131z"/>
+					<path style="fill:#114C82;" d="M192.976,377.323c2.784-5.616,6.184-9.984,9.76-13.144c-30.176-3.456-61.168-11.512-83.048-33.744 C136.52,358.451,163.928,371.195,192.976,377.323z"/>
+					</g>
+					<path style="fill:#6CA9EA;" d="M12.912,270.947c0-137.536,111.048-249,247.992-249c76.04,0,144.056,34.392,189.536,88.488 C405.52,46.755,331.616,5.163,247.992,5.163C111.048,5.163,0,116.627,0,254.163c0,61.32,22.12,117.424,58.752,160.792 C29.944,374.291,12.912,324.643,12.912,270.947z"/>
+					<path style="fill:#083E66;" d="M322.712,426.899c0-23.232-7.928-38.44-16.832-46.128c55.248-6.16,113.24-27.216,113.24-122.848 c0-27.184-9.6-49.4-25.52-66.824c2.576-6.296,11.096-31.608-2.456-65.872c0,0-2.576-0.792-7.896-0.488 c5.808,25.84-0.416,44.32-2.552,49.568c15.904,17.424,25.504,39.648,25.504,66.832c0,95.64-57.984,116.68-113.232,122.856 c8.904,7.688,16.832,22.872,16.832,46.112c0,33.296-0.296,60.128-0.296,68.296c0,5.872,3.496,12.568,12.92,12.408 C322.488,479.555,322.712,455.659,322.712,426.899z"/>
+					<path style="fill:#114C82;" d="M117.464,423.995c5.208,10.72,22.712,36.4,68.888,30.992c-0.064-5.648-0.112-11.976-0.144-18.928 C150.584,443.835,129.552,434.667,117.464,423.995z"/>
+					<path style="fill:#6CA9EA;" d="M126.368,391.387c-1.592-2.4-4.576-6.472-8.904-10.544 C120.272,385.011,123.256,388.507,126.368,391.387z"/></svg>
+				</div>
+				</a>
+			</div>
+		</div>
+	</div>
+</div>
+<script src="./js/bldx_web3.0_min.js"></script>
+<script src="./js/bldx_web3.0_h5.js"></script>
+<script src="./js/language.js?v=1.0.1"></script>
+<script src="./js/jquery-3.5.1.min.js?v=1.0.2"></script>
+</body>
+</html>
